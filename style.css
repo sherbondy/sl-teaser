@@ -51,7 +51,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', 'Gill Sans', sans-serif;
   width: 800px;
   margin: 0 auto;
   line-height: 1.5;
@@ -99,9 +99,14 @@ a {
   -moz-transition: 0.2s all ease-in-out;
   -o-transition: 0.2s all ease-in-out;
 }
-a:hover {
+a:hover,
+a:focus {
+  outline: none;
   color: #000;
   background-color: #78fb10;
+}
+a:visited {
+  border: 1px dashed #78fb10;
 }
 a:active {
   top: 1px;

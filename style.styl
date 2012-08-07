@@ -60,7 +60,7 @@ greeny = #78Fb10
 body
   background-color #000
   color #fff
-  font-family 'Source Sans Pro'
+  font-family 'Source Sans Pro', 'Gill Sans', sans-serif
   width 800px
   margin 0 auto
   line-height 1.5
@@ -102,9 +102,12 @@ a
   border 1px solid greeny
   background-color #000
   transition 0.2s all ease-in-out
-  &:hover
+  &:hover, &:focus
+    outline none
     color #000
     background-color greeny
+  &:visited
+    border 1px dashed greeny
   &:active
     top 1px
 
