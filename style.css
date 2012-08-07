@@ -75,7 +75,7 @@ h1 {
   margin-bottom: 60px;
 }
 h1 em {
-  color: #438c45;
+  color: #78fb10;
   font-style: normal;
 }
 h2,
@@ -89,14 +89,19 @@ p {
 }
 a {
   position: relative;
-  color: #438c45;
+  color: #78fb10;
   padding: 5px;
   margin: 0 5px;
-  border: 1px solid #438c45;
+  border: 1px solid #78fb10;
+  background-color: #000;
+  transition: 0.2s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
 }
 a:hover {
   color: #000;
-  background: #438c45;
+  background-color: #78fb10;
 }
 a:active {
   top: 1px;
@@ -114,6 +119,9 @@ a:active {
 #flask img {
   display: block;
 }
+#flask:hover #flask-bg {
+  background-color: #78fb10;
+}
 #flask-bg {
   z-index: -1;
   background-color: #fff;
@@ -123,6 +131,10 @@ a:active {
   -webkit-animation: fillflask 20s ease-out;
   -moz-animation: fillflask 20s ease-out;
   -o-aniamtion: fillflask 20s ease-out;
+  transition: 0.4s background-color ease-in-out;
+  -webkit-transition: 0.4s background-color ease-in-out;
+  -moz-transition: 0.4s background-color ease-in-out;
+  -o-transition: 0.4s background-color ease-in-out;
 }
 #progress,
 #bar {
