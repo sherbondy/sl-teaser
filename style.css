@@ -72,6 +72,7 @@ h2 {
 }
 h1 {
   font-size: 80px;
+  margin-bottom: 60px;
 }
 h1 em {
   color: #438c45;
@@ -100,9 +101,203 @@ a:hover {
 a:active {
   top: 1px;
 }
-#progress {
-  color: #000;
+#flask {
   background-color: #fff;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  margin-left: 700px;
+  top: 450px;
+}
+#progress,
+#bar {
+  position: absolute;
+  width: 800px;
+  margin-top: -60px;
+}
+#progress {
+  border: 1px solid #fff;
+  height: 60px;
+  transform-origin: 0px 0px;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -o-transform-origin: 0px 0px;
+  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  animation: tilt 20s ease-in;
+  -webkit-animation: tilt 20s ease-in;
+  -moz-animation: tilt 20s ease-in;
+  -o-aniamtion: tilt 20s ease-in;
+}
+#progress h2 {
+  z-index: 1;
+  color: #000;
   padding: 10px;
-  border: 1px solid #000;
+}
+#bar {
+  z-index: -1;
+  height: 60px;
+  background-color: #fff;
+  animation: fillbar 20s ease-in;
+  -webkit-animation: fillbar 20s ease-in;
+  -moz-animation: fillbar 20s ease-in;
+  -o-aniamtion: fillbar 20s ease-in;
+}
+@-moz-keyframes fillbar {
+  0% {
+    width: 1px;
+  }
+
+  50% {
+    width: 800px;
+  }
+}
+@-webkit-keyframes fillbar {
+  0% {
+    width: 1px;
+  }
+
+  50% {
+    width: 800px;
+  }
+}
+@-o-keyframes fillbar {
+  0% {
+    width: 1px;
+  }
+
+  50% {
+    width: 800px;
+  }
+}
+@-ms-keyframes fillbar {
+  0% {
+    width: 1px;
+  }
+
+  50% {
+    width: 800px;
+  }
+}
+@keyframes fillbar {
+  0% {
+    width: 1px;
+  }
+
+  50% {
+    width: 800px;
+  }
+}
+@-moz-keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  52% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  52% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+}
+@-o-keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  52% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+}
+@-ms-keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  52% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+}
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  52% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
 }

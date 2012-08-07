@@ -56,6 +56,7 @@ h1, h2
 
 h1
   font-size 80px
+  margin-bottom 60px
   & em
     color greeny
     font-style normal
@@ -83,8 +84,66 @@ a
 
 // double rainbow
 
-#progress
-  color #000
+animation()
+  animation arguments
+  -webkit-animation arguments
+  -moz-animation arguments
+  -o-aniamtion arguments
+
+transform()
+  transform arguments
+  -webkit-transform arguments
+  -moz-transform arguments
+  -o-transform arguments
+
+transform-origin()
+  transform-origin arguments
+  -webkit-transform-origin arguments
+  -moz-transform-origin arguments
+  -o-transform-origin arguments
+
+#flask
   background-color #fff
-  padding 10px
-  border 1px solid #000
+  width 300px
+  height 300px
+  position absolute
+  z-index -1
+  margin-left 700px
+  top 450px
+
+#progress, #bar
+  position absolute
+  width 800px
+  margin-top -60px
+
+#progress 
+  border 1px solid #fff
+  height 60px
+  transform-origin 0px 0px
+  transform rotate(4deg)
+  animation tilt 20s ease-in
+
+  & h2
+    z-index 1
+    color #000
+    padding 10px
+
+#bar
+  z-index -1
+  height 60px
+  background-color #fff
+  animation fillbar 20s ease-in
+
+@keyframes fillbar
+  0%
+    width 1px
+  50%
+    width 800px
+
+@keyframes tilt
+  0%
+    transform rotate(0deg)
+  50%
+    transform rotate(0deg)
+  52%
+    transform rotate(5deg)
