@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/ssp/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: lighter;
+  src: url("fonts/ssp/SourceSansPro-Light.otf");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/ssp/SourceSansPro-Bold.otf");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/ssp/SourceSansPro-Italic.otf");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: lighter;
+  src: url("fonts/ssp/SourceSansPro-LightIt.otf");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/ssp/SourceSansPro-BoldIt.otf");
+}
+@font-face {
+  font-family: 'Blackout';
+  src: url("fonts/bo/blackout_midnight-webfont.eot");
+  src: local('Blackout Midnight'), url("fonts/bo/blackout_midnight-webfont.ttf") format('truetype'), url("fonts/bo/blackout_midnight-webfont.woff") format('woff'), url("fonts/bo/blackout_midnight-webfont.svg") format('svg');
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.block {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+.center {
+  text-align: center;
+}
+h1,
+h2 {
+  line-height: 1;
+  font-family: 'Blackout';
+  color: #fff;
+}
+h1 {
+  font-size: 80px;
+}
+h1 em {
+  color: #438c45;
+  font-style: normal;
+}
+h2,
+big {
+  font-size: 40px;
+  font-family: 'Blackout';
+}
+p {
+  font-size: 25px;
+  padding: 10px 0;
+}
+a {
+  position: relative;
+  color: #438c45;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #438c45;
+}
+a:hover {
+  color: #000;
+  background: #438c45;
+}
+a:active {
+  top: 1px;
+}
+#progress {
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+}
